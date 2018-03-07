@@ -9,28 +9,35 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController,CLLocationManagerDelegate {
+class MapViewController: UIViewController,CLLocationManagerDelegate {
 
     let locManger = CLLocationManager()
     @IBOutlet weak var Map: MKMapView!
+    //cordinates for map center
     var cords: MKCoordinateRegion!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//      set up location manager to get user location and zoom
+        //assign cords to the map's so the zoom doesn't change
         cords = Map.region
+        //set up location manager to get user location and zoom
         locManger.delegate = self
         locManger.requestWhenInUseAuthorization()
         locManger.startUpdatingLocation()
+        loadShops()
     }
 
+    func loadShops(){
+        //TODO
+        //do nothing
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 //  function called when user location changes, locations[0] = current user location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
         cords.center = locations[0].coordinate
         self.Map.setRegion(cords, animated: true)
     }

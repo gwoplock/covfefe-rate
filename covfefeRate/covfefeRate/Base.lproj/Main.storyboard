@@ -14,7 +14,7 @@
         <!--Map View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Map View" customClass="ViewController" customModule="covfefeRate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Map View" customClass="MapViewController" customModule="covfefeRate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,7 @@
         <!--Add View-->
         <scene sceneID="4fe-yz-1ue">
             <objects>
-                <viewController id="VeV-fb-C4X" userLabel="Add View" sceneMemberID="viewController">
+                <viewController id="VeV-fb-C4X" userLabel="Add View" customClass="AddViewController" customModule="covfefeRate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pPb-3h-Wi7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,7 +114,7 @@
         <!--List View-->
         <scene sceneID="7Kf-ej-Sdv">
             <objects>
-                <viewController id="yab-cG-AMi" userLabel="List View" sceneMemberID="viewController">
+                <viewController id="yab-cG-AMi" userLabel="List View" customClass="ListViewController" customModule="covfefeRate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cQt-iQ-cfE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,6 +170,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="lKK-O0-c88"/>
-        <segue reference="hcp-RO-cDj"/>
+        <segue reference="6cs-Nb-quH"/>
     </inferredMetricsTieBreakers>
 </document>
