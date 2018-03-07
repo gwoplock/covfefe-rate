@@ -65,13 +65,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Map view" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yem-W9-LCu">
-                                <rect key="frame" x="266" y="20" width="94" height="28"/>
+                                <rect key="frame" x="265" y="20" width="94" height="28"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNu-f7-oNK" customClass="UICollectionView">
                                 <rect key="frame" x="0.0" y="97" width="375" height="570"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cTS-3L-jdy">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="570"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CovfefeShopTableViewCell" rowHeight="90" id="2P9-kf-TCw" customClass="CovfefeShopTableViewCell" customModule="covfefe_rate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2P9-kf-TCw" id="eOS-7N-fQ7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sP9-Qm-iXn">
+                                                            <rect key="frame" x="15" y="0.0" width="360" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GBz-Nd-ane">
+                                                            <rect key="frame" x="0.0" y="29" width="375" height="70"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </stackView>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="label" destination="sP9-Qm-iXn" id="hcK-IX-YgX"/>
+                                                    <outlet property="rate" destination="GBz-Nd-ane" id="96j-yZ-s1g"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cTS-3L-jdy" firstAttribute="top" secondItem="FNu-f7-oNK" secondAttribute="top" id="Gig-YA-vqi"/>
+                                    <constraint firstItem="cTS-3L-jdy" firstAttribute="centerX" secondItem="FNu-f7-oNK" secondAttribute="centerX" id="Vx3-PT-G86"/>
+                                    <constraint firstItem="cTS-3L-jdy" firstAttribute="leading" secondItem="FNu-f7-oNK" secondAttribute="leading" id="ehk-lZ-ETz"/>
+                                    <constraint firstAttribute="bottom" secondItem="cTS-3L-jdy" secondAttribute="bottom" id="pB3-en-LGB"/>
+                                    <constraint firstItem="cTS-3L-jdy" firstAttribute="centerY" secondItem="FNu-f7-oNK" secondAttribute="centerY" id="t3H-J6-Sgm"/>
+                                    <constraint firstAttribute="trailing" secondItem="cTS-3L-jdy" secondAttribute="trailing" id="woQ-z6-7Lo"/>
+                                </constraints>
                             </scrollView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="x4y-qe-cyM">
                                 <rect key="frame" x="288" y="59" width="51" height="31"/>

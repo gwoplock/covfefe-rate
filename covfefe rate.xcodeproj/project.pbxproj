@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A39C7ED20502A5800285BEF /* CovfefeShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A39C7EC20502A5800285BEF /* CovfefeShopTableViewController.swift */; };
 		3A7CA0D9202E8AF6003FF382 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7CA0D8202E8AF6003FF382 /* AppDelegate.swift */; };
 		3A7CA0DB202E8AF6003FF382 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7CA0DA202E8AF6003FF382 /* ViewController.swift */; };
 		3A7CA0DE202E8AF6003FF382 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7CA0DC202E8AF6003FF382 /* Main.storyboard */; };
@@ -14,9 +15,11 @@
 		3A7CA0E3202E8AF6003FF382 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7CA0E1202E8AF6003FF382 /* LaunchScreen.storyboard */; };
 		3AD1B9E62030A126009A1E4F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD1B9E52030A126009A1E4F /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		3AD1B9E82030C4E8009A1E4F /* CovfefeShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD1B9E72030C4E8009A1E4F /* CovfefeShop.swift */; };
+		3AE7C67B204F1AA100F0D922 /* CovfefeShopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE7C67A204F1AA100F0D922 /* CovfefeShopTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A39C7EC20502A5800285BEF /* CovfefeShopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeShopTableViewController.swift; sourceTree = "<group>"; };
 		3A7CA0D5202E8AF6003FF382 /* covfefe rate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "covfefe rate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7CA0D8202E8AF6003FF382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A7CA0DA202E8AF6003FF382 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		3A7CA0E4202E8AF6003FF382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AD1B9E52030A126009A1E4F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3AD1B9E72030C4E8009A1E4F /* CovfefeShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeShop.swift; sourceTree = "<group>"; };
+		3AE7C67A204F1AA100F0D922 /* CovfefeShopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovfefeShopTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +65,11 @@
 			isa = PBXGroup;
 			children = (
 				3AD1B9E72030C4E8009A1E4F /* CovfefeShop.swift */,
+				3AE7C67A204F1AA100F0D922 /* CovfefeShopTableViewCell.swift */,
 				3A7CA0D8202E8AF6003FF382 /* AppDelegate.swift */,
 				3A7CA0DA202E8AF6003FF382 /* ViewController.swift */,
 				3A7CA0DC202E8AF6003FF382 /* Main.storyboard */,
+				3A39C7EC20502A5800285BEF /* CovfefeShopTableViewController.swift */,
 				3A7CA0DF202E8AF6003FF382 /* Assets.xcassets */,
 				3A7CA0E1202E8AF6003FF382 /* LaunchScreen.storyboard */,
 				3A7CA0E4202E8AF6003FF382 /* Info.plist */,
@@ -156,6 +162,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AE7C67B204F1AA100F0D922 /* CovfefeShopTableViewCell.swift in Sources */,
+				3A39C7ED20502A5800285BEF /* CovfefeShopTableViewController.swift in Sources */,
 				3A7CA0DB202E8AF6003FF382 /* ViewController.swift in Sources */,
 				3AD1B9E82030C4E8009A1E4F /* CovfefeShop.swift in Sources */,
 				3A7CA0D9202E8AF6003FF382 /* AppDelegate.swift in Sources */,
