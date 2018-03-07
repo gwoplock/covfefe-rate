@@ -32,7 +32,7 @@
                                     <segue destination="VeV-fb-C4X" kind="show" id="XiY-bH-n5r"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="54O-ou-Gcg">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54O-ou-Gcg">
                                 <rect key="frame" x="0.0" y="92" width="375" height="575"/>
                             </mapView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Fa-yA-uzt">
@@ -71,7 +71,7 @@
         <!--Add View-->
         <scene sceneID="4fe-yz-1ue">
             <objects>
-                <viewController id="VeV-fb-C4X" userLabel="Add View" customClass="ViewController" customModule="covfefeRate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VeV-fb-C4X" userLabel="Add View" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pPb-3h-Wi7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,7 +114,7 @@
         <!--List View-->
         <scene sceneID="7Kf-ej-Sdv">
             <objects>
-                <viewController id="yab-cG-AMi" userLabel="List View" customClass="ViewController" customModule="covfefeRate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="yab-cG-AMi" userLabel="List View" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cQt-iQ-cfE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +169,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XiY-bH-n5r"/>
-        <segue reference="s0M-kb-8dQ"/>
+        <segue reference="lKK-O0-c88"/>
+        <segue reference="hcp-RO-cDj"/>
     </inferredMetricsTieBreakers>
 </document>

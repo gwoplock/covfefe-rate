@@ -14,6 +14,7 @@
 		3A39C80520502D0C00285BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A39C80420502D0C00285BEF /* Assets.xcassets */; };
 		3A39C80820502D0C00285BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A39C80620502D0C00285BEF /* LaunchScreen.storyboard */; };
 		3A43D754205097FB00C64D81 /* APIconnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43D753205097FB00C64D81 /* APIconnector.swift */; };
+		3A43D75720509D6400C64D81 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A43D75620509D6400C64D81 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3A39C80720502D0C00285BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A39C80920502D0C00285BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A43D753205097FB00C64D81 /* APIconnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIconnector.swift; sourceTree = "<group>"; };
+		3A43D75620509D6400C64D81 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A43D75720509D6400C64D81 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				3A39C7F920502D0C00285BEF /* covfefeRate */,
 				3A39C7F820502D0C00285BEF /* Products */,
+				3A43D75520509D6400C64D81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +72,14 @@
 				3A43D753205097FB00C64D81 /* APIconnector.swift */,
 			);
 			path = covfefeRate;
+			sourceTree = "<group>";
+		};
+		3A43D75520509D6400C64D81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A43D75620509D6400C64D81 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,6 +115,11 @@
 					3A39C7F620502D0C00285BEF = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
