@@ -13,6 +13,7 @@
 		3A39C80320502D0C00285BEF /* covfefeRate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A39C80120502D0C00285BEF /* covfefeRate.xcdatamodeld */; };
 		3A39C80520502D0C00285BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A39C80420502D0C00285BEF /* Assets.xcassets */; };
 		3A39C80820502D0C00285BEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A39C80620502D0C00285BEF /* LaunchScreen.storyboard */; };
+		3A43D754205097FB00C64D81 /* APIconnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43D753205097FB00C64D81 /* APIconnector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3A39C80420502D0C00285BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A39C80720502D0C00285BEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A39C80920502D0C00285BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A43D753205097FB00C64D81 /* APIconnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIconnector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3A39C80620502D0C00285BEF /* LaunchScreen.storyboard */,
 				3A39C80920502D0C00285BEF /* Info.plist */,
 				3A39C80120502D0C00285BEF /* covfefeRate.xcdatamodeld */,
+				3A43D753205097FB00C64D81 /* APIconnector.swift */,
 			);
 			path = covfefeRate;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			files = (
 				3A39C7FD20502D0C00285BEF /* ViewController.swift in Sources */,
 				3A39C7FB20502D0C00285BEF /* AppDelegate.swift in Sources */,
+				3A43D754205097FB00C64D81 /* APIconnector.swift in Sources */,
 				3A39C80320502D0C00285BEF /* covfefeRate.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
