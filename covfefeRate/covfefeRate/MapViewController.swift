@@ -29,9 +29,13 @@ class MapViewController: UIViewController,CLLocationManagerDelegate {
 
     func loadShops(){
         let api = APIconnector.init(url:"http://138.197.200.59/api/listCoffee")
-        var arr = api.getArray() as! [NSDictionary]
-        for obj in arr{
-            
+        let arr = api.getArray()as! [NSDictionary]
+        for obj in arr {
+            let name = obj.value(forKey: "name") as! String
+            let lat = obj.value(forKey: "lat") as! Double
+            let long = obj.value(forKey: "long") as! Double
+            let toAdd = CovfefeShopAnnotation(title: name, locationName: name, discipline: "Coffee Shop", coordinate: CLLocationCoordinate2D(latitude: lat, longitude: long))
+            Map.addAnnotation(toAdd)
         }
         
         

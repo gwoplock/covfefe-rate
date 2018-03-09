@@ -56,7 +56,11 @@ class APIconnector {
             }
         }
         _task.resume()
+        while(_toRet == nil){
+            
+        }
         return _toRet
     }
+    
     
 }
