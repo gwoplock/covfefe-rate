@@ -32,7 +32,7 @@
                                     <segue destination="VeV-fb-C4X" kind="show" id="XiY-bH-n5r"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54O-ou-Gcg">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54O-ou-Gcg">
                                 <rect key="frame" x="0.0" y="92" width="375" height="575"/>
                             </mapView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Fa-yA-uzt">
@@ -67,6 +67,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="295" y="58"/>
         </scene>
         <!--Add View-->
         <scene sceneID="4fe-yz-1ue">
@@ -169,7 +170,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lKK-O0-c88"/>
+        <segue reference="XiY-bH-n5r"/>
         <segue reference="6cs-Nb-quH"/>
     </inferredMetricsTieBreakers>
 </document>

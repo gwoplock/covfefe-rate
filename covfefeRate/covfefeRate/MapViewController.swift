@@ -28,8 +28,13 @@ class MapViewController: UIViewController,CLLocationManagerDelegate {
     }
 
     func loadShops(){
-        //TODO
-        //do nothing
+        let api = APIconnector.init(url:"http://138.197.200.59/api/listCoffee")
+        var arr = api.getArray() as! [NSDictionary]
+        for obj in arr{
+            
+        }
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,8 +43,9 @@ class MapViewController: UIViewController,CLLocationManagerDelegate {
     }
 //  function called when user location changes, locations[0] = current user location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        cords.center = locations[0].coordinate
-        self.Map.setRegion(cords, animated: true)
+       /* cords.center = locations[0].coordinate
+        cords.span = self.Map.region.span
+        self.Map.setRegion(cords, animated: true)*/
     }
 
 }
